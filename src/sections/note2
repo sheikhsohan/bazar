@@ -1,0 +1,44 @@
+                    <div class="single-product-item single-product-item-horizontal">
+                        <div class="single-product-item-image">
+                            <a href="product-details.html" class="prodcut-images">
+                                <img class="primary-image" src="assets/images/products/product-image-3-1.jpg" alt="">
+                                <img class="secondary-image" src="assets/images/products/product-image-3-2.jpg" alt="">
+                            </a>
+                            <ul class="single-product-item-action">
+                                <li class="single-product-item-action-list">
+                                    <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick-view-modal" class="single-product-item-action-link"><i class="icon-rt-eye2"></i></a>
+                                </li>
+                            </ul>
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress_stock-wrap">
+                                    <p class="stock-out">Sold: <span class="stock-value">365</span></p>
+                                    <p class="stock-in">Available: <span class="stock-value">634</span></p>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+                        </div>
+
+                        <div class="single-product-item-content">
+                            <div class="single-product-item-rating">
+                                <i class="icon-rt-star-solid select-star"></i>
+                                <i class="icon-rt-star-solid select-star"></i>
+                                <i class="icon-rt-star-solid select-star"></i>
+                                <i class="icon-rt-star-solid select-star"></i>
+                                <i class="icon-rt-star-solid"></i>
+                            </div>
+                            <h6 class="single-product-item-title"><a href="#">Fresh Fruit Sweet 1Kg</a></h6>
+                            <div class="single-product-item-price">
+                                $10.00 - $70.00
+                            </div>
+                            <p class="text-conunter">
+                                Hurry up! Offer end ins:
+                            </p>
+                            <!-- countdown start -->
+                            <div class="countdown-deals" data-countdown="2023/03/01"></div>
+                            <!-- countdown end -->
+                        </div>
+                    </div>
