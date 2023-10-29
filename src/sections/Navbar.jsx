@@ -24,8 +24,8 @@ const Navbar = () => {
                                     </li>
                                     <li className="curreny-wrap">Currency <i className="icon-rt-arrow-down"></i>
                                         <ul className="dropdown-list curreny-list">
-                                            <li><a href="#">$ USD</a></li>
-                                            <li><a href="#"> € EURO</a></li>
+                                            <li><a href="#">$ BDT</a></li>
+                                            <li><a href="#"> € USD</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -72,7 +72,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="header-bottom-area bg-secondary header-sticky">
+            <div className="header-bottom-area bg-secondary sticky">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-3">
@@ -141,118 +141,16 @@ const Navbar = () => {
 
                                 <nav className="main-navigation">
                                     <ul>
-                                        <li className="active"><a href="index.html">Home Page <i className="icon-rt-arrow-down"></i></a>
-                                            <ul className="sub-menu">
-                                                <li><a href="index.html">Home Page 1</a></li>
-                                                <li><a href="index-2.html">Home Page 2</a></li>
-                                                <li><a href="index-3.html">Home Page 3</a></li>
-                                                <li><a href="index-4.html">Home Page 4</a></li>
-                                            </ul>
+                                        <li className="active"><a href="index.html">Home</a>
                                         </li>
 
-                                        <li><a href="#">Shop <i className="icon-rt-arrow-down"></i></a>
-                                            <ul className="mega-menu">
-                                                <li><a href="#">LAYOUT</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Shop Left Sidebar</a></li>
-                                                        <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                        <li><a href="shop-no-sidebar.html">Shop No Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog.html">FEATURES <span>NEW</span></a>
-                                                    <ul>
-                                                        <li><a href="shop-category-description-top.html">Category Description <span className="menu-label">On Top</span></a></li>
-                                                        <li><a href="shop-category-description-bottom.html">Category Description <span className="menu-label">On Bottom</span></a></li>
-                                                        <li><a href="shop-show-subcategories.html">Show sub categories</a></li>
-                                                        <li><a href="shop-show-loadmore.html">Load More Items</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">PRODUCT STYLE</a>
-                                                    <ul>
-                                                        <li><a href="shop-product-1.html">Style 01</a></li>
-                                                        <li><a href="shop-product-2.html">Style 02</a></li>
-                                                        <li><a href="shop-product-3.html">Style 03</a></li>
-                                                        <li><a href="shop-product-4.html">Style 04</a></li>
-                                                        <li><a href="shop-product-5.html">Style 05</a></li>
-                                                        <li><a href="shop-product-6.html">Style 06</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <li><a href="#">Shop</a>
                                         </li>
-                                        <li><a href="#">Product <i className="icon-rt-arrow-down"></i></a>
-                                            <ul className="mega-menu-col-2">
-                                                <li><a href="#">PRODUCT GALLERY</a>
-                                                    <ul>
-                                                        <li><a href="product-details.html">Simple product</a></li>
-                                                        <li><a href="product-details-image-top.html">Image Top</a></li>
-                                                        <li><a href="product-details-fluid.html">Full width</a></li>
-                                                        <li><a href="product-details-image-grid-1-column.html">Grid - 1 column</a></li>
-                                                        <li><a href="product-details-image-grid-2-column.html">Grid - 2 columns</a></li>
-                                                        <li><a href="product-details-vertical-thumbnails.html">Vertical Thumbnails</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">PRODUCT DETAILS</a>
-                                                    <ul>
-                                                        <li><a href="product-details-countdown.html">Product details countdown</a></li>
-                                                        <li><a href="product-details-video-button.html">Video Button</a></li>
-                                                        <li><a href="product-details-video-in-gallery.html">Video In Gallery</a></li>
-                                                        <li><a href="product-details-accordion.html">Tab accordion</a></li>
-                                                        <li><a href="product-details-tab-vertical.html">Tab vertical</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <li><a href="#">Product</a>
                                         </li>
-                                        <li><a href="#">Pages <i className="icon-rt-arrow-down"></i></a>
-                                            <ul className="mega-menu-col-2">
-                                                <li>
-                                                    <a href="#">OTHER PAGE</a>
-                                                    <ul>
-                                                        <li><a href="my-account.html">My account</a></li>
-                                                        <li><a href="checkout.html">Checkout</a></li>
-                                                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="#">OTHER PAGE</a>
-                                                    <ul>
-                                                        <li><a href="contact-us.html">Contact us</a></li>
-                                                        <li><a href="about-us.html">About us</a></li>
-                                                        <li><a href="error-404.html">404 page</a></li>
-                                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                                    </ul>
-
-                                                </li>
-
-                                            </ul>
+                                        <li><a href="#">Pages</a>
                                         </li>
-                                        <li><a href="blog.html">Blog <i className="icon-rt-arrow-down"></i></a>
-                                            <ul className="mega-menu-col-2">
-                                                <li>
-                                                    <a href="#">BLOG TYPE</a>
-                                                    <ul>
-                                                        <li><a href="blog.html">Blog grid</a></li>
-                                                        <li><a href="blog-mask.html">Blog mask</a></li>
-                                                        <li><a href="blog-list.html">Blog list</a></li>
-                                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                        <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="#">SINGLE POST</a>
-                                                    <ul>
-                                                        <li><a href="blog-details.html">Post example #1</a></li>
-                                                        <li><a href="blog-details-2.html">Post example #2</a></li>
-                                                        <li><a href="blog-details-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a href="blog-details.html">Right Sidebar</a></li>
-                                                        <li><a href="blog-details-no-sidebar.html">No Sidebar</a></li>
-                                                        <li><a href="blog-details-right-title.html">Right Title</a></li>
-                                                    </ul>
-
-                                                </li>
-
-                                            </ul>
+                                        <li><a href="blog.html">Blog</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -315,121 +213,18 @@ const Navbar = () => {
                                                     <ul>
                                                         <li className="has-children">
                                                             <a href="index.html">Home</a>
-                                                            <ul className="sub-menu">
-                                                                <li><a href="index.html">Home Page 1</a></li>
-                                                                <li><a href="index-2.html">Home Page 2</a></li>
-                                                                <li><a href="index-3.html">Home Page 3</a></li>
-                                                                <li><a href="index-4.html">Home Page 4</a></li>
-                                                            </ul>
                                                         </li>
                                                         <li className="has-children">
                                                             <a href="#">Shop</a>
-                                                            <ul className="sub-menu">
-                                                                <li className="has-children">
-                                                                    <a href="#">LAYOUT</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a href="shop.html">Shop Left Sidebar</a></li>
-                                                                        <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                                        <li><a href="shop-no-sidebar.html">Shop No Sidebar</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li className="has-children">
-                                                                    <a href="#">FEATURES NEW</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a className="position-relative d-block" href="shop-category-description-top.html">Category Description <span className="menu-label">On Top</span></a></li>
-                                                                        <li><a className="position-relative d-block" href="shop-category-description-bottom.html">Category Description <span className="menu-label">On Bottom</span></a></li>
-                                                                        <li><a href="shop-show-subcategories.html">Show sub categories</a></li>
-                                                                        <li><a href="shop-show-loadmore.html">Load More Items</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li className="has-children">
-                                                                    <a href="#">PRODUCT STYLE</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a href="shop-product-1.html">Style 01</a></li>
-                                                                        <li><a href="shop-product-2.html">Style 02</a></li>
-                                                                        <li><a href="shop-product-3.html">Style 03</a></li>
-                                                                        <li><a href="shop-product-4.html">Style 04</a></li>
-                                                                        <li><a href="shop-product-5.html">Style 05</a></li>
-                                                                        <li><a href="shop-product-6.html">Style 06</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
                                                         </li>
                                                         <li className="has-children">
                                                             <a href="#">Product</a>
-                                                            <ul className="sub-menu">
-                                                                <li className="has-children">
-                                                                    <a href="#">PRODUCT GALLERY</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a href="product-details.html">Simple product</a></li>
-                                                                        <li><a href="product-details-image-top.html">Image Top</a></li>
-                                                                        <li><a href="product-details-fluid.html">Full width</a></li>
-                                                                        <li><a href="product-details-image-grid-1-column.html">Grid - 1 column</a></li>
-                                                                        <li><a href="product-details-image-grid-2-column.html">Grid - 2 columns</a></li>
-                                                                        <li><a href="product-details-vertical-thumbnails.html">Vertical Thumbnails</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li className="has-children">
-                                                                    <a href="#">PRODUCT DETAILS</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a href="product-details-countdown.html">Product details countdown</a></li>
-                                                                        <li><a href="product-details-video-button.html">Video Button</a></li>
-                                                                        <li><a href="product-details-video-in-gallery.html">Video In Gallery</a></li>
-                                                                        <li><a href="product-details-accordion.html">Tab accordion</a></li>
-                                                                        <li><a href="product-details-tab-vertical.html">Tab vertical</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
                                                         </li>
                                                         <li className="has-children">
                                                             <a href="#">Pages</a>
-                                                            <ul className="sub-menu">
-                                                                <li className="has-children">
-                                                                    <a href="#">OTHER PAGE 1</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a href="my-account.html">My account</a></li>
-                                                                        <li><a href="checkout.html">Checkout</a></li>
-                                                                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li className="has-children">
-                                                                    <a href="#">OTHER PAGE 2</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a href="contact-us.html">Contact us</a></li>
-                                                                        <li><a href="about-us.html">About us</a></li>
-                                                                        <li><a href="error-404.html">404 page</a></li>
-                                                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
                                                         </li>
                                                         <li className="has-children">
                                                             <a href="#">Blogs</a>
-                                                            <ul className="sub-menu">
-                                                                <li className="has-children">
-                                                                    <a href="#">BLOG TYPE</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a href="blog.html">Blog grid</a></li>
-                                                                        <li><a href="blog-mask.html">Blog mask</a></li>
-                                                                        <li><a href="blog-list.html">Blog list</a></li>
-                                                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                                        <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li className="has-children">
-                                                                    <a href="#">SINGLE POST</a>
-                                                                    <ul className="sub-menu">
-                                                                        <li><a href="blog-details.html">Post example #1</a></li>
-                                                                        <li><a href="blog-details-2.html">Post example #2</a></li>
-                                                                        <li><a href="blog-details-left-sidebar.html">Left Sidebar</a></li>
-                                                                        <li><a href="blog-details.html">Right Sidebar</a></li>
-                                                                        <li><a href="blog-details-no-sidebar.html">No Sidebar</a></li>
-                                                                        <li><a href="blog-details-right-title.html">Right Title</a></li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
                                                         </li>
 
                                                     </ul>
