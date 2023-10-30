@@ -5,6 +5,7 @@ import SupperDeals from './sections/SupperDeals'
 import BestSeller from './sections/BestSeller'
 import FreshBanner from './sections/FreshBanner'
 import NewArrivals from './sections/NewArrivals'
+import MiddleBanner from './sections/MiddleBanner'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <SupperDeals />
       <FreshBanner />
       <NewArrivals />
+      <MiddleBanner />
     </main>
     </>
   )
