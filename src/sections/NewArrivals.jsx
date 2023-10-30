@@ -4,13 +4,13 @@ const bestSellerData = [
   {
     title: "Fresh organic kiwi",
     price: "$10.00 - $70.00",
-    imageSrc: "assets/images/products/product-image-2-1.jpg",
+    imageSrc: "assets/images/products/product-image-1-1.jpg",
     rating: 4,
   },
   {
     title: "Dried mango",
     price: "$10.00 - $70.00",
-    imageSrc: "assets/images/products/product-image-1-1.jpg",
+    imageSrc: "assets/images/products/product-image-2-1.jpg",
     rating: 4,
   },
   {
@@ -35,6 +35,42 @@ const bestSellerData = [
     title: "Fresh Broccoli",
     price: "$60.00 - $68.00",
     imageSrc: "assets/images/products/product-image-6-1.jpg",
+    rating: 4,
+  },
+  {
+    title: "Dried mango",
+    price: "$10.00 - $70.00",
+    imageSrc: "assets/images/products/product-image-7-1.jpg",
+    rating: 4,
+  },
+  {
+    title: "Almond organic",
+    price: "$50.00 - $77.00",
+    imageSrc: "assets/images/products/product-image-8-1.jpg",
+    rating: 4,
+  },
+  {
+    title: "Dried mang",
+    price: "$10.00 - $70.00",
+    imageSrc: "assets/images/products/product-image-9-1.jpg",
+    rating: 4,
+  },
+  {
+    title: "Dried mango",
+    price: "$10.00 - $70.00",
+    imageSrc: "assets/images/products/product-image-10-1.jpg",
+    rating: 4,
+  },
+  {
+    title: "Dried mango",
+    price: "$10.00 - $70.00",
+    imageSrc: "assets/images/products/product-image-11-1.jpg",
+    rating: 4,
+  },
+  {
+    title: "Orange",
+    price: "$40.00 - $70.00",
+    imageSrc: "assets/images/products/product-image-12-1.jpg",
     rating: 4,
   },
 ];
@@ -72,15 +108,15 @@ const BestSellerItem = ({ title, price, imageSrc }) => (
   </div>
 );
 
-const BestSeller = () => {
+const NewArrivals = () => {
   return (
     <section className="product-item-section pb-5">
       <div className="container">
         <div className="row">
           <div className="col-12 position-relative">
             <div className="section-title-wrap">
-              <h2 className="section-title">Best Sellers</h2>
-              <p>Add bestselling products to the weekly lineup</p>
+              <h2 className="section-title">New Arrivals</h2>
+              <p>Add new products to weekly line up</p>
             </div>
           </div>
         </div>
@@ -99,4 +135,4 @@ const BestSeller = () => {
   );
 };
 
-export default BestSeller;
+export default NewArrivals;
