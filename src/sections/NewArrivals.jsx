@@ -1,4 +1,7 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const bestSellerData = [
   {
@@ -76,8 +79,8 @@ const bestSellerData = [
 ];
 
 const BestSellerItem = ({ title, price, imageSrc }) => (
-  <div className="col-lg-2 col-md-4 col-sm-6 border">
-    <div className="single-product-item mt-2 ">
+  <div className="product-slider-active-grid product-border-box">
+    <div className="single-product-item">
       <div className="single-product-item-image">
         <a href="product-details.html" className="prodcut-images">
           <img className="primary-image" src={imageSrc} alt="" />
@@ -109,6 +112,44 @@ const BestSellerItem = ({ title, price, imageSrc }) => (
 );
 
 const NewArrivals = () => {
+  const isLgDevice = window.innerWidth >= 992; // Check for lg device
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200, // Add a breakpoint for large (lg) devices
+        settings: {
+          slidesToShow: isLgDevice ? 6 : 1, // Display 6 items on lg devices, 1 on others
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
+  const splitProductsIntoTwoRows = (products) => {
+    const firstRow = products.slice(0, 6);
+    const secondRow = products.slice(6, 12);
+    return [firstRow, secondRow];
+  };
+
+  const [firstRow, secondRow] = splitProductsIntoTwoRows(bestSellerData);
+
   return (
     <section className="product-item-section pb-5">
       <div className="container">
@@ -116,20 +157,45 @@ const NewArrivals = () => {
           <div className="col-12 position-relative">
             <div className="section-title-wrap">
               <h2 className="section-title">New Arrivals</h2>
-              <p>Add new products to weekly line up</p>
+              <p>Add new products to the weekly lineup</p>
             </div>
           </div>
         </div>
         <div className="row">
-          {bestSellerData.map((product, index) => (
-            <BestSellerItem
-              key={index}
-              title={product.title}
-              price={product.price}
-              imageSrc={product.imageSrc}
-            />
-          ))}
+          <Slider {...settings}>
+            {isLgDevice
+              ? firstRow.map((product, index) => (
+                  <BestSellerItem
+                    key={index}
+                    title={product.title}
+                    price={product.price}
+                    imageSrc={product.imageSrc}
+                  />
+                ))
+              : bestSellerData.map((product, index) => (
+                  <BestSellerItem
+                    key={index}
+                    title={product.title}
+                    price={product.price}
+                    imageSrc={product.imageSrc}
+                  />
+                ))}
+          </Slider>
         </div>
+        {isLgDevice && (
+          <div className="row">
+            <Slider {...settings}>
+              {secondRow.map((product, index) => (
+                <BestSellerItem
+                  key={index}
+                  title={product.title}
+                  price={product.price}
+                  imageSrc={product.imageSrc}
+                />
+              ))}
+            </Slider>
+          </div>
+        )}
       </div>
     </section>
   );
