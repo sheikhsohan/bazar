@@ -80,25 +80,25 @@ const BestSeller = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Number of products to show at once
+    slidesToShow: 6, // Number of products to show at once
     slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
