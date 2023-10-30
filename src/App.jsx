@@ -8,6 +8,7 @@ import NewArrivals from './sections/NewArrivals'
 import MiddleBanner from './sections/MiddleBanner'
 import PopularCategory from './sections/PopularCategory'
 import NewsLetter from './sections/NewsLetter'
+import Feature from './sections/Feature'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <MiddleBanner />
       <PopularCategory />
       <NewsLetter />
+      <Feature />
     </main>
     </>
   )
