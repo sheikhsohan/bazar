@@ -1,4 +1,7 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const bestSellerData = [
   {
@@ -40,8 +43,8 @@ const bestSellerData = [
 ];
 
 const BestSellerItem = ({ title, price, imageSrc }) => (
-  <div className="col-lg-2 col-md-4 col-sm-6 border">
-    <div className="single-product-item mt-2 ">
+  <div className="product-slider-active product-border-box">
+    <div className="single-product-item">
       <div className="single-product-item-image">
         <a href="product-details.html" className="prodcut-images">
           <img className="primary-image" src={imageSrc} alt="" />
@@ -73,6 +76,35 @@ const BestSellerItem = ({ title, price, imageSrc }) => (
 );
 
 const BestSeller = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4, // Number of products to show at once
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+  
+
   return (
     <section className="product-item-section pb-5">
       <div className="container">
@@ -85,14 +117,16 @@ const BestSeller = () => {
           </div>
         </div>
         <div className="row">
-          {bestSellerData.map((product, index) => (
-            <BestSellerItem
-              key={index}
-              title={product.title}
-              price={product.price}
-              imageSrc={product.imageSrc}
-            />
-          ))}
+          <Slider {...settings}>
+            {bestSellerData.map((product, index) => (
+              <BestSellerItem
+                key={index}
+                title={product.title}
+                price={product.price}
+                imageSrc={product.imageSrc}
+              />
+            ))}
+          </Slider>
         </div>
       </div>
     </section>
